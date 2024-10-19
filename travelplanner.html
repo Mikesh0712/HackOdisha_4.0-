@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Itinerary</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+  .heading{
+    background-color: blue;
+    border-radius: 10px;
+    background-image: url('puri.jpg');
+    height: 200px;
+  }
+</style>
+<body>
+  <div class="heading"><h1> Travel Itinerary Generator</h1></div>
+    
+    <form id="itinerary-form">
+        <label for="destination">Destination:</label>
+        <input type="text" id="destination" name="destination"><br><br>
+        <label for="start-date">Start Date:</label>
+        <input type="date" id="start-date" name="start-date"><br><br>
+        <label for="end-date">End Date:</label>
+        <input type="date" id="end-date" name="end-date"><br><br>
+        <label for="activities">Activities (comma separated):</label>
+        <input type="text" id="activities" name="activities"><br><br>
+        <button id="generate-itinerary">Generate Itinerary</button>
+    </form>
+    <div id="itinerary-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
